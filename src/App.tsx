@@ -965,7 +965,7 @@ const Footer = () => {
             <h4 className="text-white font-bold mb-6">Contact</h4>
             <ul className="space-y-4">
               <li className="flex items-center gap-2"><Mail className="w-4 h-4" /> admin@indiwebpros.in</li>
-              <li className="flex items-center gap-2"><MessageSquare className="w-4 h-4" /> +91 80742 23801</li>
+              <li className="flex items-center gap-2"><MessageSquare className="w-4 h-4" /> soon</li>
             </ul>
           </div>
         </div>
