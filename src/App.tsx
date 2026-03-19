@@ -193,49 +193,69 @@ const testimonials = [
 
 const LogoMark = ({ className }: { className?: string }) => (
   <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+    <defs>
+      <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stopColor="#06b6d4" />
+        <stop offset="100%" stopColor="#8b5cf6" />
+      </linearGradient>
+    </defs>
+    {/* Outer Globe Arc */}
     <path 
-      d="M16 2L4 9V23L16 30L28 23V9L16 2Z" 
-      stroke="currentColor" 
-      strokeWidth="2.5" 
-      strokeLinejoin="round" 
-      className="opacity-40"
-    />
-    <path 
-      d="M10 14V22L16 18L22 22V14" 
-      stroke="currentColor" 
-      strokeWidth="2.5" 
-      strokeLinecap="round" 
-      strokeLinejoin="round" 
-    />
-    <circle cx="16" cy="9" r="2" fill="currentColor" />
-    <path 
-      d="M16 18V25" 
-      stroke="currentColor" 
+      d="M28 16C28 22.6274 22.6274 28 16 28C9.37258 28 4 22.6274 4 16" 
+      stroke="url(#logo-gradient)" 
       strokeWidth="2" 
-      strokeLinecap="round" 
-      className="opacity-60"
+      strokeLinecap="round"
+      className="opacity-30"
     />
+    {/* Brackets */}
+    <path 
+      d="M9 10L5 16L9 22" 
+      stroke="url(#logo-gradient)" 
+      strokeWidth="2.5" 
+      strokeLinecap="round" 
+      strokeLinejoin="round" 
+    />
+    <path 
+      d="M23 10L27 16L23 22" 
+      stroke="url(#logo-gradient)" 
+      strokeWidth="2.5" 
+      strokeLinecap="round" 
+      strokeLinejoin="round" 
+    />
+    {/* Central AI Node & Connections */}
+    <circle cx="16" cy="16" r="3.5" fill="url(#logo-gradient)" />
+    <path 
+      d="M16 7V12.5M16 19.5V25M7 16H12.5M19.5 16H25" 
+      stroke="url(#logo-gradient)" 
+      strokeWidth="1.5" 
+      strokeLinecap="round" 
+    />
+    <circle cx="16" cy="7" r="1" fill="url(#logo-gradient)" className="opacity-60" />
+    <circle cx="16" cy="25" r="1" fill="url(#logo-gradient)" className="opacity-60" />
+    <circle cx="7" cy="16" r="1" fill="url(#logo-gradient)" className="opacity-60" />
+    <circle cx="25" cy="16" r="1" fill="url(#logo-gradient)" className="opacity-60" />
   </svg>
 );
 
 const Logo = ({ isDark = false, size = "md" }: { isDark?: boolean, size?: "sm" | "md" | "lg" }) => {
-  const boxSize = size === "sm" ? "w-8 h-8" : size === "lg" ? "w-12 h-12" : "w-10 h-10";
-  const iconSize = size === "sm" ? "w-5 h-5" : size === "lg" ? "w-7 h-7" : "w-6 h-6";
-  const textSize = size === "sm" ? "text-lg" : size === "lg" ? "text-2xl" : "text-xl";
+  const boxSize = size === "sm" ? "w-8 h-8" : size === "lg" ? "w-14 h-14" : "w-11 h-11";
+  const iconSize = size === "sm" ? "w-5 h-5" : size === "lg" ? "w-8 h-8" : "w-7 h-7";
+  const textSize = size === "sm" ? "text-lg" : size === "lg" ? "text-3xl" : "text-2xl";
   
   return (
     <div className="flex items-center gap-3 group cursor-pointer">
-      <div className={`relative ${boxSize}`}>
-        <div className="absolute inset-0 bg-amber-600 rounded-xl rotate-6 opacity-20 group-hover:rotate-12 transition-transform duration-300"></div>
-        <div className="absolute inset-0 bg-rose-500 rounded-xl -rotate-6 opacity-20 group-hover:-rotate-12 transition-transform duration-300"></div>
-        <div className={`relative ${boxSize} bg-gradient-to-br from-amber-600 to-orange-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-amber-900/20 group-hover:scale-105 transition-transform duration-300`}>
+      <div className={`relative ${boxSize} flex items-center justify-center`}>
+        <div className="absolute inset-0 bg-cyan-500/10 rounded-xl rotate-6 group-hover:rotate-12 transition-transform duration-500 blur-sm"></div>
+        <div className="absolute inset-0 bg-purple-500/10 rounded-xl -rotate-6 group-hover:-rotate-12 transition-transform duration-500 blur-sm"></div>
+        <div className={`relative ${boxSize} bg-slate-900 border border-slate-800 rounded-xl flex items-center justify-center text-white shadow-2xl group-hover:scale-105 transition-all duration-500`}>
           <LogoMark className={iconSize} />
         </div>
       </div>
-      <div className="leading-none">
-        <span className={`${textSize} font-bold tracking-tight ${isDark ? 'text-white' : 'text-slate-900'}`}>
-          IndiWebPros
+      <div className="flex flex-col leading-none">
+        <span className={`${textSize} font-black tracking-tighter ${isDark ? 'text-white' : 'text-slate-900'} group-hover:text-cyan-500 transition-colors duration-300`}>
+          INDI<span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">WEB</span>PROS
         </span>
+        <span className="text-[10px] font-bold tracking-[0.2em] text-slate-500 uppercase mt-1">Tech Solutions</span>
       </div>
     </div>
   );
