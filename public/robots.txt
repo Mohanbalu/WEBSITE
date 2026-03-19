@@ -1,5 +1,3 @@
 User-agent: *
 Allow: /
-
-# Sitemap location
 Sitemap: https://indiwebpros.in/sitemap.xml
