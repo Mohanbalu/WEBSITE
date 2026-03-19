@@ -29,7 +29,8 @@ import {
   ExternalLink,
   Clock,
   Search,
-  Phone
+  Phone,
+  Check
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { portfolio } from './data/portfolio';
@@ -70,36 +71,57 @@ const services = [
     id: 1,
     title: "Web Development Services",
     icon: <Globe className="w-8 h-8" />,
-    items: ["MERN Stack Development", "Full Stack Development", "Custom Web Applications", "E-commerce Solutions", "Progressive Web Apps (PWA)"],
-    color: "bg-amber-500/10 text-amber-600"
+    items: [
+      "Custom Business Websites",
+      "High-Converting Landing Pages",
+      "E-commerce Solutions (Shopify/MERN)",
+      "SEO-Friendly Architecture",
+      "Progressive Web Apps (PWA)"
+    ],
+    color: "bg-amber-500/10 text-amber-600",
+    description: "We build fast, responsive, and SEO-optimized websites that turn visitors into loyal customers. From simple landing pages to complex e-commerce platforms, IndiWebPros ensures your business stands out online."
   },
   {
     id: 2,
     title: "AI Solutions & Automation",
     icon: <BrainCircuit className="w-8 h-8" />,
-    items: ["Custom AI Chatbots", "Machine Learning Models", "Deep Learning Projects", "Natural Language Processing", "Predictive Analytics"],
-    color: "bg-orange-500/10 text-orange-600"
+    items: [
+      "Intelligent AI Chatbots",
+      "Smart Recommendation Systems",
+      "Business Process Automation",
+      "Predictive Data Analytics",
+      "Custom Machine Learning Models"
+    ],
+    color: "bg-orange-500/10 text-orange-600",
+    description: "Leverage the power of Artificial Intelligence to automate your workflows and provide personalized experiences. IndiWebPros develops smart applications that save time and increase efficiency."
   },
   {
     id: 3,
-    title: "Programming & Technical Help",
+    title: "Full Stack Development",
     icon: <Code2 className="w-8 h-8" />,
-    items: ["Python Programming", "C / C++ Solutions", "DBMS & SQL Help", "Code Debugging & Optimization", "Technical Consulting"],
-    color: "bg-rose-500/10 text-rose-600"
+    items: [
+      "React & Next.js Frontend",
+      "Node.js & Express Backend",
+      "Scalable Database Design",
+      "API Integration & Development",
+      "Cloud Deployment & Hosting"
+    ],
+    color: "bg-rose-500/10 text-rose-600",
+    description: "Our full-stack expertise ensures your application is robust from the ground up. We use modern technologies like React and Node.js to build scalable, high-performance systems for your business."
   },
   {
     id: 4,
-    title: "Student Project Services",
-    icon: <GraduationCap className="w-8 h-8" />,
-    items: ["Final Year Projects", "Research Paper Support", "Academic Assignment Help", "Minor & Major Projects"],
-    color: "bg-fuchsia-500/10 text-fuchsia-600"
-  },
-  {
-    id: 5,
-    title: "Academic & Professional",
-    icon: <UserCircle className="w-8 h-8" />,
-    items: ["Resume Building", "Portfolio Websites", "Technical Writing", "Career Guidance"],
-    color: "bg-indigo-500/10 text-indigo-600"
+    title: "Technical Consulting",
+    icon: <Zap className="w-8 h-8" />,
+    items: [
+      "Tech Stack Selection",
+      "Code Audit & Optimization",
+      "Security Best Practices",
+      "Performance Tuning",
+      "Scalability Planning"
+    ],
+    color: "bg-indigo-500/10 text-indigo-600",
+    description: "Not sure which technology to choose? IndiWebPros provides expert technical consulting to help you make informed decisions that align with your long-term business goals."
   }
 ];
 
@@ -335,12 +357,12 @@ const Hero = () => {
             IndiWebPros – Expert Tech Solutions
           </span>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-slate-900 leading-tight mb-6">
-            Expert <span className="text-amber-600">Freelance Web Developer India</span> & AI Solutions
+            IndiWebPros – <span className="text-amber-600">Freelance Web Developer</span> & AI Solutions in India
           </h1>
           <p className="max-w-3xl mx-auto text-lg md:text-xl text-slate-600 mb-10 leading-relaxed">
-            Elevate your business with <strong>IndiWebPros</strong>. We specialize in building high-performance <strong>AI web applications</strong>, 
-            scalable <strong>full stack development</strong>, and custom digital solutions tailored for startups and established enterprises. 
-            As a leading <strong>freelance web developer in India</strong>, we deliver professional, SEO-optimized websites that drive growth and maximize client conversion.
+            Transform your business with high-performance <strong>web development services</strong> and <strong>AI solutions</strong>. 
+            At <strong>IndiWebPros</strong>, we solve complex business problems with scalable <strong>full stack development</strong>, 
+            intelligent automation, and SEO-optimized digital experiences that drive real growth.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
@@ -393,21 +415,23 @@ const About = () => {
             viewport={{ once: true }}
           >
             <span className="text-amber-600 font-bold tracking-widest uppercase text-sm mb-4 block">About IndiWebPros</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">IndiWebPros: Your Partner in Digital Excellence</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">IndiWebPros: Your Strategic Partner in Digital Growth</h2>
             <div className="space-y-4 text-lg text-slate-600 leading-relaxed">
               <p>
-                At <strong>IndiWebPros</strong>, we are more than just developers; we are your strategic partners in digital growth. 
-                Our mission is to provide top-tier <strong>web development services</strong> that combine aesthetic appeal with technical robustness. 
-                Whether you need a simple landing page or a complex <strong>AI-driven application</strong>, we have the expertise to deliver.
+                At <strong>IndiWebPros</strong>, we don't just build websites; we create digital assets that drive revenue. 
+                As a premier <strong>freelance web developer in India</strong>, we understand that your online presence is the face of your business. 
+                That's why we focus on building <strong>high-converting websites</strong> that combine stunning design with <strong>SEO-friendly architecture</strong>.
               </p>
               <p>
-                We specialize in <strong>React</strong>, <strong>Next.js</strong>, and <strong>Node.js</strong>, ensuring your application is fast, 
-                secure, and future-proof. Our focus on <strong>SEO optimization</strong> and <strong>performance</strong> ensures your business 
-                stands out in the crowded digital landscape of India and beyond.
+                Our expertise spans across <strong>full stack development</strong> using the MERN stack (React, Node.js, MongoDB) and 
+                <strong>AI-driven solutions</strong> that automate repetitive tasks and provide intelligent insights. 
+                We help businesses in India and globally to stay ahead of the curve by implementing 
+                <strong>smart applications</strong> and <strong>scalable backend systems</strong>.
               </p>
               <p>
-                With a commitment to 100% client satisfaction, we've successfully delivered numerous projects across various industries, 
-                helping startups scale and established businesses modernize their tech stack.
+                Whether you are a startup looking for your first <strong>MVP</strong> or an established enterprise needing 
+                <strong>technical consulting</strong>, IndiWebPros delivers custom solutions that are fast, secure, and 
+                optimized for <strong>maximum client conversion</strong>.
               </p>
             </div>
             
@@ -450,10 +474,10 @@ const About = () => {
 
 const WhyChoose = () => {
   const reasons = [
-    { title: "Technical Expertise", desc: "Our team consists of expert MERN stack and AI developers with years of hands-on experience in building scalable applications.", icon: <Code2 className="w-6 h-6" /> },
-    { title: "Client-Centric Approach", desc: "We prioritize your business goals, ensuring every solution is custom-built to solve your specific challenges and drive growth.", icon: <UserCircle className="w-6 h-6" /> },
-    { title: "Modern Technologies", desc: "We leverage the latest frameworks like React, Next.js, and Node.js to build future-proof, high-performance web applications.", icon: <Zap className="w-6 h-6" /> },
-    { title: "SEO & Performance", desc: "Every project is optimized for search engines and lightning-fast performance to maximize your online visibility and conversion.", icon: <ShieldCheck className="w-6 h-6" /> }
+    { title: "Fast Delivery", desc: "We understand that time is money. IndiWebPros delivers high-quality projects on time, ensuring your business launches without delays.", icon: <Clock className="w-6 h-6" /> },
+    { title: "Affordable Pricing", desc: "Get premium web development and AI solutions at competitive rates. We offer flexible pricing models tailored to your budget.", icon: <Zap className="w-6 h-6" /> },
+    { title: "Custom Solutions", desc: "No cookie-cutter templates. Every project at IndiWebPros is custom-built to meet your unique business requirements and goals.", icon: <UserCircle className="w-6 h-6" /> },
+    { title: "AI Expertise", desc: "Stay ahead of the competition with our cutting-edge AI expertise. We implement smart features that automate and optimize your business.", icon: <BrainCircuit className="w-6 h-6" /> }
   ];
 
   return (
@@ -505,6 +529,7 @@ const Services = () => {
                 {service.icon}
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-4">{service.title}</h3>
+              <p className="text-sm text-slate-500 mb-6 leading-relaxed">{service.description}</p>
               <ul className="space-y-3">
                 {service.items.map((item, i) => (
                   <li key={i} className="flex items-center gap-2 text-slate-600">
@@ -697,10 +722,30 @@ const Portfolio = () => {
                     </div>
                   </div>
                   <div className="p-6 flex-grow flex flex-col">
-                    <h3 className="text-xl font-bold mb-2 group-hover:text-slate-400 transition-colors">{project.title}</h3>
-                    <p className="text-sm text-slate-400 mb-4 flex-grow line-clamp-2">{project.desc}</p>
+                    <div className="flex items-center justify-between mb-2">
+                      <h3 className="text-xl font-bold group-hover:text-slate-400 transition-colors">{project.title}</h3>
+                      {project.problem && (
+                        <span className="text-[9px] font-bold uppercase tracking-widest bg-amber-500/10 text-amber-500 px-2 py-0.5 rounded-full border border-amber-500/20">
+                          Case Study
+                        </span>
+                      )}
+                    </div>
+                    <p className="text-sm text-slate-400 mb-4 line-clamp-2">{project.desc}</p>
                     
-                    <div className="flex flex-wrap gap-2 mb-6">
+                    {project.problem && (
+                      <div className="mb-4 space-y-3 p-4 bg-slate-900/50 rounded-2xl border border-slate-700/30">
+                        <div>
+                          <h4 className="text-[10px] font-bold uppercase tracking-wider text-slate-500 mb-1">The Problem</h4>
+                          <p className="text-xs text-slate-400 line-clamp-2 italic">"{project.problem}"</p>
+                        </div>
+                        <div>
+                          <h4 className="text-[10px] font-bold uppercase tracking-wider text-emerald-500/70 mb-1">The Result</h4>
+                          <p className="text-xs text-slate-300 line-clamp-2 font-medium">{project.result}</p>
+                        </div>
+                      </div>
+                    )}
+
+                    <div className="flex flex-wrap gap-2 mb-6 mt-auto">
                       {project.tags.map((tag, j) => (
                         <span key={j} className="text-[10px] font-medium px-2 py-1 bg-slate-700/50 rounded-md text-slate-300">
                           {tag}
@@ -713,7 +758,7 @@ const Portfolio = () => {
                         href={project.link} 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 text-sm font-bold text-slate-400 hover:text-slate-300 transition-colors group/link mt-auto"
+                        className="inline-flex items-center gap-2 text-sm font-bold text-slate-400 hover:text-slate-300 transition-colors group/link"
                       >
                         View Live Project <ExternalLink className="w-4 h-4 transition-transform group-hover/link:translate-x-1 group-hover/link:-translate-y-1" />
                       </a>
@@ -1239,10 +1284,51 @@ const ServicesPage = () => (
     <div className="bg-slate-50 py-12 border-b border-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-3xl md:text-4xl font-bold text-slate-900">Our Services at IndiWebPros</h1>
+        <p className="mt-4 text-slate-600 max-w-3xl">We provide end-to-end digital solutions designed to help businesses scale. From high-converting websites to advanced AI automation, our services are tailored to your specific goals.</p>
       </div>
     </div>
     <Services />
+    
+    <section className="py-24 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div>
+            <h2 className="text-3xl font-bold text-slate-900 mb-6">Why Businesses Trust Our Services</h2>
+            <div className="space-y-6">
+              {[
+                { title: "Strategic Approach", desc: "We don't just write code; we build solutions that align with your business objectives." },
+                { title: "Cutting-Edge Tech", desc: "We use the latest frameworks like Next.js, React, and OpenAI to ensure your project is future-proof." },
+                { title: "SEO-First Mindset", desc: "Every website we build is optimized for search engines from day one to ensure maximum visibility." },
+                { title: "Dedicated Support", desc: "We provide ongoing maintenance and support to ensure your digital assets continue to perform." }
+              ].map((item, i) => (
+                <div key={i} className="flex gap-4">
+                  <div className="w-6 h-6 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center flex-shrink-0 mt-1">
+                    <Check className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-slate-900">{item.title}</h4>
+                    <p className="text-slate-600 text-sm">{item.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="bg-slate-900 rounded-3xl p-8 text-white relative overflow-hidden">
+            <div className="relative z-10">
+              <h3 className="text-2xl font-bold mb-4">Ready to Scale Your Business?</h3>
+              <p className="text-slate-400 mb-8">Get a free consultation and a custom quote for your project. Let's build something amazing together.</p>
+              <Link to="/contact" className="inline-flex items-center gap-2 bg-amber-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-amber-700 transition-all">
+                Get Started Now <ArrowRight className="w-5 h-5" />
+              </Link>
+            </div>
+            <div className="absolute -right-20 -bottom-20 w-64 h-64 bg-amber-600/10 rounded-full blur-3xl" />
+          </div>
+        </div>
+      </div>
+    </section>
+
     <Pricing />
+    <Process />
   </div>
 );
 
@@ -1256,9 +1342,25 @@ const ProjectsPage = () => (
     <div className="bg-slate-50 py-12 border-b border-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-3xl md:text-4xl font-bold text-slate-900">IndiWebPros Portfolio & Projects</h1>
+        <p className="mt-4 text-slate-600 max-w-3xl">Explore our diverse range of projects, from high-performance business websites to advanced AI solutions. Each project is a testament to our commitment to quality, innovation, and client success.</p>
       </div>
     </div>
     <Portfolio />
+    
+    <section className="py-24 bg-slate-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 className="text-3xl font-bold text-slate-900 mb-6">Have a Project in Mind?</h2>
+        <p className="text-slate-600 max-w-2xl mx-auto mb-10">Whether you're a startup looking for your first website or an established business needing AI automation, we're here to help you succeed.</p>
+        <div className="flex flex-wrap justify-center gap-4">
+          <Link to="/contact" className="bg-amber-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-amber-700 transition-all shadow-lg shadow-amber-100">
+            Start Your Project
+          </Link>
+          <a href="https://wa.me/918074223801" className="bg-white text-slate-900 border border-slate-200 px-8 py-4 rounded-xl font-bold hover:bg-slate-50 transition-all">
+            Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
   </div>
 );
 
