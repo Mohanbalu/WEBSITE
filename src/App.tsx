@@ -39,7 +39,7 @@ import { AIChatbot } from './components/AIChatbot';
 // --- Data ---
 
 const SHEET_WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbwQVhk4l2AtLxl63xXMW7TP91hznjtIdaEJrbcsklbQs1CQWg9IlEtng-QyXBqucxq1iQ/exec";
-const WHATSAPP_NUMBER = "918074223801"; // Corrected number
+const WHATSAPP_NUMBER = "xx"; // Corrected number
 
 // --- Scroll To Top Component ---
 const ScrollToTop = () => {
@@ -978,14 +978,14 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-slate-500">WhatsApp Support</p>
-                  <p className="font-bold text-slate-900">+91 80742 23801</p>
+                  <p className="font-bold text-slate-900">+91 xx</p>
                 </div>
               </div>
             </div>
 
             <div className="mt-12">
               <a 
-                href="https://wa.me/918074223801" 
+                href="https://wa.me/xx" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-slate-900 text-white px-8 py-4 rounded-full font-bold hover:bg-slate-950 transition-all shadow-lg shadow-slate-100"
@@ -1172,7 +1172,7 @@ const Footer = () => {
             <h4 className="text-white font-bold mb-6">Contact Info</h4>
             <ul className="space-y-4">
               <li className="flex items-center gap-2"><Mail className="w-4 h-4" /> admin@indiwebpros.in</li>
-              <li className="flex items-center gap-2"><MessageSquare className="w-4 h-4" /> +91 80742 23801</li>
+              <li className="flex items-center gap-2"><MessageSquare className="w-4 h-4" /> +91 xx</li>
               <li className="mt-4">
                 <a 
                   href="https://wa.me/918074223801" 
